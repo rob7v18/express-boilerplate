@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
+    "test": "mocha --require test/setup.js",
     "dev": "nodemon src/server.js",
     "start": "node src/server.js",
     "predeploy": "npm audit",
@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "chai": "^4.2.0",
-    "test": "mocha --require test/setup.js",
+    "mocha": "^8.1.3",
     "nodemon": "^2.0.4",
     "supertest": "^5.0.0"
   }
